@@ -1,6 +1,6 @@
 <?php
-	include "./backoffice/configuration.php";
-	include "./backoffice/connect.php";
+	include "backoffice/configuration.php";
+	include "backoffice/connect.php";
 
 	$query[0] = sprintf("SELECT * FROM %s_images WHERE true", $configuration["mysql-prefix"]);
 	$source[0] = $mysqli->query($query[0]);
