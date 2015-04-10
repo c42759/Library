@@ -3,122 +3,122 @@
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 </head>
 <body>
-<style>
-html, body {
-  height: 100%;
-  width: 100%;
-}
-body {
-  margin: 0;
-  font-family: Calibri, sans-serif;
-  color: #333;
-  text-align: center;  overflow-x: hidden;
-}
-.image {
-  overflow: hidden;
-  height: 300px;
-}
-.header {
-  height: 500px;
-}
-.backgroundImage {
-  overflow: hidden;
-  height: 100%;
-  background-image: url(http://placehold.it/1366x768/666666);
-  background-size: cover;
-  background-position: 50% 50%;
-  position: relative;
-}
-
-#header {
-  background-image: url(http://placehold.it/1366x768/666666/&text=Header);
-}
-#more {
-  background-image: url(http://placehold.it/1366x768/666666/&text=More);
-}
-#last {
-  background-image: url(http://placehold.it/1366x768/666666/&text=Last);
-}
-.content {
-  background: white;
-}
-.content article {
-  padding: 10px;
-  margin: 0 auto;
-  max-width: 480px;
-}
-footer {
-  padding: 10px;
-  color: white;
-  background: #333;
-}
-</style>
-<div id="contentSection">
-  <section class="image header">
-	<div class="backgroundImage" id="header"></div>
-  </section>
-  <section class="content">
-	<article>
-	  <h2>Title</h2>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</article>
-  </section>
-  <section class="image">
-	<div class="backgroundImage" id="first"></div>
-  </section>
-  <section class="content">
-	<article>
-	  <h2>Title</h2>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</article>
-  </section>
-  <section class="image">
-	<div class="backgroundImage" id="more"></div>
-  </section>
-  <section class="content">
-	<article>
-	  <h2>Title</h2>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</article>
-  </section>
-  <section class="image">
-	<div class="backgroundImage" id="last"></div>
-  </section>
-  <section class="content">
-	<article>
-	  <h2>Title</h2>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</article>
-  </section>
-  <footer>
-	<article>
-	  <h2>Footer</h2>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</article>
-  </footer>
-</div>
-
-<script>
-var lastScrollTop = 0;
-var backgroundImages = $('.backgroundImage');
-
-$(window).scroll(function(e){
-  var st = $(this).scrollTop();
-  var ah = $(this).height();
-  backgroundImages.each(function(i){
-	var img = $(this);
-	var pos = img.position().top;
-	var hei = img.height();
-	if ((st + ah) > pos && st < (pos + hei)){
-	  var p = ((pos - st)/ah) + 0.25;
-	  if(i == 1) console.log(p);
-	  img.css('background-position', '50%'+(p*100)+'%');
+	<style>
+	html, body {
+	  height: 100%;
+	  width: 100%;
 	}
-  });
-  lastScrollTop = st;
-});
+	body {
+	  margin: 0;
+	  font-family: Calibri, sans-serif;
+	  color: #333;
+	  text-align: center;  overflow-x: hidden;
+	}
+	.image {
+	  overflow: hidden;
+	  height: 300px;
+	}
+	.header {
+	  height: 500px;
+	}
+	.backgroundImage {
+	  overflow: hidden;
+	  height: 100%;
+	  background-image: url(http://placehold.it/1366x768/666666);
+	  background-size: cover;
+	  background-position: 50% 50%;
+	  position: relative;
+	}
 
-$(window).scroll();
-</script>
+	#header {
+	  background-image: url(http://placehold.it/1366x768/666666/&text=Header);
+	}
+	#more {
+	  background-image: url(http://placehold.it/1366x768/666666/&text=More);
+	}
+	#last {
+	  background-image: url(http://placehold.it/1366x768/666666/&text=Last);
+	}
+	.content {
+	  background: white;
+	}
+	.content article {
+	  padding: 10px;
+	  margin: 0 auto;
+	  max-width: 480px;
+	}
+	footer {
+	  padding: 10px;
+	  color: white;
+	  background: #333;
+	}
+	</style>
+	<div id="contentSection">
+	  <section class="image header">
+		<div class="backgroundImage" id="header"></div>
+	  </section>
+	  <section class="content">
+		<article>
+		  <h2>Title</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+	  </section>
+	  <section class="image">
+		<div class="backgroundImage" id="first"></div>
+	  </section>
+	  <section class="content">
+		<article>
+		  <h2>Title</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+	  </section>
+	  <section class="image">
+		<div class="backgroundImage" id="more"></div>
+	  </section>
+	  <section class="content">
+		<article>
+		  <h2>Title</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+	  </section>
+	  <section class="image">
+		<div class="backgroundImage" id="last"></div>
+	  </section>
+	  <section class="content">
+		<article>
+		  <h2>Title</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+	  </section>
+	  <footer>
+		<article>
+		  <h2>Footer</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+	  </footer>
+	</div>
+
+	<script>
+	var lastScrollTop = 0;
+	var backgroundImages = $('.backgroundImage');
+
+	$(window).scroll(function(e){
+	  var st = $(this).scrollTop();
+	  var ah = $(this).height();
+	  backgroundImages.each(function(i){
+		var img = $(this);
+		var pos = img.position().top;
+		var hei = img.height();
+		if ((st + ah) > pos && st < (pos + hei)){
+		  var p = ((pos - st)/ah) + 0.25;
+		  if(i == 1) console.log(p);
+		  img.css('background-position', '50%'+(p*100)+'%');
+		}
+	  });
+	  lastScrollTop = st;
+	});
+
+	$(window).scroll();
+	</script>
 </body>
 </html>
