@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>{c2r-email-subject}</title>
+        <style>
+            @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+            body, table {
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+				background-color: rgb(245,245,245);
+            }
+
+            table {
+				border: 1px solid rgb(200,200,200);
+                width: 600px;
+                margin: 0 auto;
+                border-spacing: 4px;
+				background-color: rgb(240,240,240);
+            }
+			
+            td {
+                padding: 10px 20px;
+                vertical-align: top;
+				border: 1px solid rgb(200,200,200);
+            }
+
+            .fieldname {
+				width: 175px;
+                font-weight: 400;
+                color: gray;
+                background-color: rgb(225, 225, 225);
+            }
+			
+			.logo {
+				text-align: center;
+			}
+        </style>
+    </head>
+    <body>
+        <table>
+			<tr>
+				<td colspan="2" class="logo">
+					<img src="base64 image here"/>
+				</span>
+			</tr>
+            <tr>
+                <td class="fieldname">{c2r-name}</td>
+                <td>{c2r-name-value}</td>
+            </tr>
+            <tr>
+                <td class="fieldname">{c2r-email}</td>
+                <td>{c2r-email-value}</td>
+            </tr>
+            <tr>
+                <td class="fieldname">{c2r-tlm}</td>
+                <td>{c2r-tlm-value}</td>
+            </tr>
+            <tr>
+                <td class="fieldname">{c2r-message}</td>
+                <td>{c2r-message-value}</td>
+            </tr>
+        </table>
+    </body>
+</html>
