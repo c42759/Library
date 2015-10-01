@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+/* styling here */
+.spacer150 {height: 150px;}
+.spacer120 {height: 120px;}
+.spacer90 {height: 90px;}
+.spacer60 {height: 60px;}
+.spacer30 {height: 30px;}
+.spacer15 {height: 15px;}
+
+body {
+        background-repeat: no-repeat;
+        background-size:cover;
+        font-family: "Open Sans", sans-serif !important;
+        color: #222;
+}
+
+#home {}
+
+#home .col-md-4,
+#home .col-md-8 {
+    padding: 0;
+    background-color: #FFF;
+}
+
+#home .col-md-4.company {
+    border-left: 1px solid #DDD;
+}
+
+#home .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home .col-md-4.company .image {
+    background-size: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#home .header {
+    background-color: #222;
+    padding: 0 15px;
+    font-size: 15pt;
+    color: #FFF;
+}
+
+#home i {
+    color: #ff8800;
+}
+
+#home .title,
+#home .item {
+    padding: 0 15px;
+}
+
+#home .title h2 {
+    text-transform: uppercase;
+}
+
+#home .title h2 i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #FFF;
+    background-color: #222;
+    border-radius: 50%;
+    font-size: 18pt;
+    line-height: 50px;
+}
+
+#home .item {
+    font-size: 12pt;
+    font-style: italic;
+}
+
+#home .item i {
+    font-size: 11pt;
+}
+
+#home .item a {
+    color: #222;
+}
+
+#home .item a:hover {
+    text-decoration: none;
+}
+
+#home .col-md-8 a {
+    background-color: #222;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+}
+
+#home .col-md-8 a i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #222;
+    background-color: #FFF;
+    border-radius: 50%;
+    font-size: 18pt;
+    line-height: 50px;
+    margin-right: 15px;
+}
+
+#home .user {
+    color: #222;
+}
+
+#home .user .col-md-2 {
+    background-position: center;
+    background-size: cover;
+}
+
+#home .user .col-md-3 {
+    line-height: 120px;
+    background-color: #FFF;
+}
+
+#home .col-md-1 {
+    padding: 0;
+}
+
+#home .user a {
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    background-color: #222;
+    font-size: 25pt;
+}
