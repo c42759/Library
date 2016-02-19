@@ -37,9 +37,14 @@
 		<meta name="author" content="NexuS-Pt, work team" />
 		<meta name="author-code" content="#someone#" />
 
-        <link rel="stylesheet" type="text/css" href="site-assets/css/style.css">
+		<?php
+			print file_get_contents("http://nexus-pt.github.io/BO2/bootstrap.html");
+			print file_get_contents("http://nexus-pt.github.io/BO2/fontawesome.html");
+		?>
 
-        <script type="text/javascript" src="site-assets/js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="site-assets/css/style.css">
+
+		<script type="text/javascript" src="site-assets/js/script.js"></script>
 
 	</head>
 	<body>
