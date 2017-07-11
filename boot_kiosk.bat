@@ -5,4 +5,10 @@ taskkill /f /im explorer.exe
 "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" localhost --kiosk --incognito --disable-pinch --overscroll-history-navigation=0
 
 :: run explorer after shutdown kiosk
-explorer.exe
+start explorer.exe
+
+:: timeout press ctrl+c, y and Enter to stop
+timeout /t 5
+
+:: restart app
+"C:\Users\Evoke\Desktop\boot.bat"
