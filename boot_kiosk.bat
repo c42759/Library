@@ -11,4 +11,4 @@ start explorer.exe
 timeout /t 5
 
 :: restart app
-"C:\Users\Evoke\Desktop\boot.bat"
+"C:\Users\Evoke\Desktop\boot_kiosk.bat"
